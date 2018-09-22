@@ -6,6 +6,9 @@ using UnityEngine;
 
 public class DustCloud : MonoBehaviour {
 
+    //change the opacity
+    public float opacity;
+
     public GameObject dustCloud;
     private ParticleSystem ps;
     private Color tempColor;
@@ -16,7 +19,7 @@ public class DustCloud : MonoBehaviour {
         {
             //Finder farve på jorden -> laver dens opacitet om til 50 %
             tempColor = other.GetComponent<SpriteRenderer>().color;
-            tempColor.a = .5f;
+            tempColor.a = opacity;
 
             //finder particlesystemet som vi bruger som dustcloud;
             ps = dustCloud.GetComponent<ParticleSystem>();
