@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class DustCloud : MonoBehaviour {
 
-    //change the opacity
+    //change the opacity 0 - 1f.
     public float opacity;
 
     public GameObject dustCloud;
